@@ -20,3 +20,9 @@ if __name__ == "__main__":
     print("-----------------------")
     print(f"Basic Salary : ₹{basic}")
     print(f"Gross Salary : ₹{salary}")
+def calculate_tax(gross_salary):
+
+    return gross_salary * 0.10
+tax = calculate_tax(salary)
+
+print(f"Tax : ₹{tax}")
