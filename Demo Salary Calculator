@@ -1,0 +1,22 @@
+"""
+Employee Salary Calculator
+Demo Project
+Author: Trainer
+"""
+
+
+def calculate_salary(basic_salary, hra_percent=20, bonus=5000):
+    hra = basic_salary * (hra_percent / 100)
+    gross_salary = basic_salary + hra + bonus
+    return gross_salary
+
+
+if __name__ == "__main__":
+    basic = 50000
+
+    salary = calculate_salary(basic)
+
+    print("Employee Salary Details")
+    print("-----------------------")
+    print(f"Basic Salary : ₹{basic}")
+    print(f"Gross Salary : ₹{salary}")
